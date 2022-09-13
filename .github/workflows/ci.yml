@@ -53,7 +53,7 @@ jobs:
             type=ref,event=branch
             type=ref,event=tag
             type=ref,event=pr
-            type=semver,pattern={{version}},value=${{ matrix.base_image_tag }}
+            type=raw,value=${{ matrix.base_image_tag }}
             type=semver,pattern={{raw}}
             type=semver,pattern={{version}}
 
